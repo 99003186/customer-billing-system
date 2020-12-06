@@ -1,1 +1,62 @@
+#include "unity.h"
+#include <customer-billing-system_operations.h>
 
+/* Modify these two lines according to the project */
+#include <calculator_operations.h>
+#define PROJECT_NAME    "customer-billing-system"
+
+/* Prototypes for all the test functions */
+void test_add(void);
+void test_add(void);
+void test_subtract(void);
+void test_multiply(void);
+void test_divide(void);
+
+/* Required by the unity test framework */
+void setUp(){}
+/* Required by the unity test framework */
+void tearDown(){}
+
+/* Start of the application test */
+int main()
+{
+/* Initiate the Unity Test Framework */
+  UNITY_BEGIN();
+
+/* Run Test functions */
+  RUN_TEST(test_input);
+  RUN_TEST(test_writefile);
+  RUN_TEST(test_search);
+  RUN_TEST(test_output);
+    /* Close the Unity Test Framework */
+  return UNITY_END();
+}
+
+/* Write all the test functions */ 
+void test_input(void) {
+  TEST_ASSERT_EQUAL(1, input());
+  
+  /* Dummy fail*/
+  
+}
+
+void test_writefile(void) {
+  TEST_ASSERT_EQUAL(2, writefile());
+   
+  /* Dummy fail*/
+  
+}
+
+void test_search(void) {
+  TEST_ASSERT_EQUAL(3, search());
+  
+  /* Dummy fail*/
+  
+}
+
+void test_output(void) {
+  TEST_ASSERT_EQUAL(4, output());
+  
+  /* Dummy fail*/
+  
+}
